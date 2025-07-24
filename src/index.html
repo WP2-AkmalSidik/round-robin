@@ -360,7 +360,7 @@
                                     <i class="fas fa-user-tie text-blue-500 text-xs"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-sm">Petugas A</h4>
+                                    <h4 class="font-semibold text-gray-800 text-sm">Rina</h4>
                                     <p class="text-xs text-gray-600">Dilayani: <span id="officerA-count">0</span></p>
                                 </div>
                             </div>
@@ -374,7 +374,7 @@
                                     <i class="fas fa-user-tie text-green-500 text-xs"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-sm">Petugas B</h4>
+                                    <h4 class="font-semibold text-gray-800 text-sm">NurWidiya</h4>
                                     <p class="text-xs text-gray-600">Dilayani: <span id="officerB-count">0</span></p>
                                 </div>
                             </div>
@@ -388,7 +388,7 @@
                                     <i class="fas fa-user-tie text-purple-500 text-xs"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-800 text-sm">Petugas C</h4>
+                                    <h4 class="font-semibold text-gray-800 text-sm">Nanda</h4>
                                     <p class="text-xs text-gray-600">Dilayani: <span id="officerC-count">0</span></p>
                                 </div>
                             </div>
@@ -488,11 +488,11 @@
         class QueueManager {
             constructor() {
                 this.queue = [];
-                this.officers = ['Petugas A', 'Petugas B', 'Petugas C'];
+                this.officers = ['Rina', 'NurWidiya', 'Nanda'];
                 this.currentOfficerIndex = 0;
                 this.queueCounter = 1;
                 this.servedCount = 0;
-                this.officerCounts = { 'Petugas A': 0, 'Petugas B': 0, 'Petugas C': 0 };
+                this.officerCounts = { 'Rina': 0, 'NurWidiya': 0, 'Nanda': 0 };
 
                 this.initializeEventListeners();
                 this.updateUI();
@@ -598,7 +598,7 @@
                     this.queue = [];
                     this.queueCounter = 1;
                     this.servedCount = 0;
-                    this.officerCounts = { 'Petugas A': 0, 'Petugas B': 0, 'Petugas C': 0 };
+                    this.officerCounts = { 'Rina': 0, 'NurWidiya': 0, 'Nanda': 0 };
                     this.updateUI();
                     this.showToast('warning', 'Semua antrian telah dihapus');
                 }
@@ -780,9 +780,9 @@
 
             updateOfficerCounts() {
                 const counts = [
-                    { id: 'officerA-count', value: this.officerCounts['Petugas A'] },
+                    { id: 'officerA-count', value: this.officerCounts['Rina'] },
                     { id: 'officerB-count', value: this.officerCounts['Petugas B'] },
-                    { id: 'officerC-count', value: this.officerCounts['Petugas C'] }
+                    { id: 'officerC-count', value: this.officerCounts['Nanda'] }
                 ];
 
                 counts.forEach(({ id, value }) => {
